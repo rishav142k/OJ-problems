@@ -1,3 +1,5 @@
+// Problem Link: https://www.hackerrank.com/challenges/attribute-parser
+
 #include <iostream>
 #include <map>
 using namespace std;
