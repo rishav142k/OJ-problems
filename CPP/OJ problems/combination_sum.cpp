@@ -1,3 +1,5 @@
+//problem:
+//https://leetcode.com/problems/combination-sum/
 
 void sumadd(vector<int>&v,vector<int> candidates,int i,int target,vector<vector<int>>&ans)
 {

@@ -1,3 +1,6 @@
+//problem
+//https://leetcode.com/problems/contains-duplicate-iii/
+
 class Solution {
 public:
     bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t) {

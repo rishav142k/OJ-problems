@@ -1,3 +1,6 @@
+//problem:
+//https://leetcode.com/problems/combinations/
+
 void backtrack(int i,int n,int k,vector<int>&v,vector<vector<int>>&ans)
 {
     if(i>n)

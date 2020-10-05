@@ -9,6 +9,9 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+//problem:
+//https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+
 TreeNode*helper(vector<int>& preorder,vector<int>& inorder,map<int,int>&m,int& index,int low,int high)
 {
     if(low>high||low<0||low>inorder.size()||high>inorder.size()||index>=inorder.size()||high<0)
