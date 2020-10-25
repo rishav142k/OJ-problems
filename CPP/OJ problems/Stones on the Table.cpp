@@ -1,7 +1,7 @@
 
 // Problem: A. Stones on the Table
 // Contest: Codeforces - Codeforces Round #163 (Div. 2)
-// URL: https://codeforces.com/problemset/problem/266/A
+// URL: https://codeforces.com/contest/266/problem/A
 // Memory Limit: 256 MB
 // Time Limit: 2000 ms
 // Powered by CP Editor (https://github.com/cpeditor/cpeditor)
@@ -27,21 +27,26 @@ int main()
      cin.tie(0);
      cout.tie(0);
      
-     int n;
-     cin >> n;
-     string s;
-     cin >> s;
-     int r = 0, g = 0, b = 0;
- 	for(int i=1;i<n;i++){
- 		
- 		if(s[i-1] == s[i])
- 			if(s[i]=='R')++r;
- 			else if(s[i]=='G'){
- 					++g;
- 				}			
- 		else if(s[i]=='B')
- 			++b;
- }
- cout<<r+g+b;
+	int n;
+	string s;
+	
+	cin >> n;
+	cin >> s;
+	
+	int res =0;
+	for(int i = 1; i < n; i++) {
+		if(s[i] == s[i-1]) {
+			res++;
+		}
+	}
+	cout << res << "\n";
+     
+     
+     
+     
+     
+     
+     
+     
 return 0;
 }
