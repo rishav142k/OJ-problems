@@ -1,7 +1,7 @@
 
 // Problem: A. Beautiful Matrix
 // Contest: Codeforces - Codeforces Round #161 (Div. 2)
-// URL: https://codeforces.com/problemset/problem/263/A
+// URL: https://codeforces.com/contest/263/problem/A
 // Memory Limit: 256 MB
 // Time Limit: 2000 ms
 // Powered by CP Editor (https://github.com/cpeditor/cpeditor)
@@ -26,19 +26,20 @@ int main()
      ios_base::sync_with_stdio(0);
      cin.tie(0);
      cout.tie(0);
-		int A[6][6];
-		int a, b;
-		
-     for(int i = 1; i <= 5; i++) {
-     	for(int j = 1; j <= 5; j++) {
-     		cin >> A[i][j];
-     		if(A[i][j]) {
+     
+     int m[5][5];
+     int a = 0, b =0;
+     for(int i = 0; i < 5; i++) {
+     	for(int j = 0; j < 5; j++) {
+     		cin >> m[i][j];
+     		if(m[i][j] == 1) {
      			a = i;
      			b = j;
      		}
      	}
      }
-     cout << abs(a -3) + abs(b - 3) << "\n";
+     cout << abs(a -2) + abs(b-2) << "\n";
+     
      
      
      
